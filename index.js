@@ -1,10 +1,10 @@
-import express from 'express';
-import { ExpressPeerServer } from "peer";
-import http from "http";
-import dotenv from 'dotenv';
+const express = require('express');
+const { ExpressPeerServer } =require("peer");
+const http = require("http");
+const dotenv= require('dotenv');
 dotenv.config();
 const app = express();
-import cors from 'cors';
+const cors= require('cors');
 app.use(cors(
 {
     origin: `${process.env.FRONTEND_URL}`,
